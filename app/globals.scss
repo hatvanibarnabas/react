@@ -1,0 +1,236 @@
+.header {
+  text-align: center;
+
+  &--buttons-container {
+    display: flex;
+    justify-content: center;
+  }
+
+  &--title {
+    font-size: 64px;
+    font-weight: 600;
+    color: #272937;
+    margin-top: 40px;
+    margin-bottom: 0;
+    display: block;
+  }
+
+  &--title2 {
+    font-size: 64px;
+    font-weight: 600;
+    color: #272937;
+    margin-top: 40px;
+    margin-bottom: 0;
+    display: none;
+  }
+
+  &--subtitle {
+    font-size: 16px;
+    color: #7D7F90;
+  }
+
+  &--description {
+    font-size: 20px;
+    color: #272937;
+    font-weight: 400;
+    width: 910px;
+    margin: 0 auto;
+    padding-top: 20px;
+  }
+  &--description2 {
+    font-size: 20px;
+    color: #272937;
+    font-weight: 400;
+    width: 910px;
+    margin: 0 auto;
+    padding-top: 20px;
+    display: none;
+  }
+
+  &--buttons-container {
+    margin-top: 40px;
+  }
+
+  &--button1 {
+    color: white;
+    background-color: #2C3FA3;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 10px;
+    padding: 17px 15px;
+    margin-right: 20px;
+  }
+
+  &--button2 {
+    color: #2C3FA3;
+    background-color: white;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 10px;
+    padding: 17px 15px;
+    border: 1px solid #2C3FA3;
+  }
+
+  &--girl-image {
+    width: 100%;
+    height: 100%;
+    margin-top: 50px;
+    border-radius: 6px;
+  }
+}
+
+.subscribe {
+  height: 404px;
+  margin: 80px 0;
+  box-shadow: 0px 40px 40px -40px #2C529D14;
+  border-radius: 6px;
+  align-items: center;
+  display: flex;
+  padding-left: 70px;
+
+  &--title {
+    color: #272937;
+    font-weight: 600;
+    font-size: 36px;
+  }
+
+  &--subtitle {
+    font-size: 20px;
+    font-weight: 400;
+    width: 700px;
+    color: #272937;
+  }
+
+  &--input-container {
+    align-items: center;
+    display: flex;
+  }
+
+  &--input {
+    background-color: #FFF;
+    width: 700px;
+    height: 64px;
+    border-radius: 10px;
+    border: 1px solid #D2D3E1;
+    font-size: 16px;
+    padding-left: 12px;
+  }
+
+  &--button {
+    background-color: #2C3FA3;
+    width: 130px;
+    height: 64px;
+    border-radius: 10px;
+    border: 1px solid #2C3FA3;
+    font-size: 16px;
+    padding-left: 12px;
+    font-weight: 600;
+    color: white;
+    margin-left: 36px;
+  }
+}
+
+@media screen and (max-width: 1399px) {
+  .subscribe {
+    padding: 0 3rem;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .header {
+    &--description {
+      width: 100%;
+      padding: 0 20px;
+    }
+  }
+  .subscribe {
+    padding: 0 3rem;
+    &--input-with-button {
+      display: flex;
+    }
+    &--input {
+      width: 100%;
+    }
+    &--subtitle {
+      width: 100%;
+      
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .header {
+    &--title {
+      display: none;
+    }
+
+    &--title2 {
+      display: block;
+      font-size: 32px;
+    }
+
+    &--description {
+      display: none;
+     }
+
+    &--description2 {
+     display: block;
+     width: 100%;
+     padding: 0 20px;
+    }
+
+    &--button1 {
+      margin-right: 0px;
+      margin-bottom: 10px;
+      height: 40px;
+      padding: 0 13px;
+      border-radius: 7px;
+      font-size: 14px;
+      img {
+        margin-top: -4px;
+      }
+    }
+
+    &--button2 {
+      margin-right: 0px;
+      margin-bottom: 10px;
+      height: 40px;
+      padding: 0 13px;
+      border-radius: 7px;
+      font-size: 14px;
+    }
+
+    &--buttons-container {
+      display: grid;
+    }
+  }
+  .subscribe {
+    background: linear-gradient(0deg, #F4F5FB, #F4F5FB), linear-gradient(360deg, rgba(0, 0, 0, 0.7) 29.9%, rgba(0, 0, 0, 0) 81.57%);
+    background-image: url('../img/delivery-man.png'), linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0))  !important;
+    &--title {
+      color: white;
+      font-size: 24px;
+    }
+    &--subtitle {
+      color: white;
+      font-size: 18px;
+    }
+    &--input-with-button {
+      display: block;
+    }
+    &--input {
+      height: 40px;
+      border-radius: 4px;
+    }
+    &--button {
+      height: 40px;
+      margin-left: 0;
+      border-radius: 4px;
+      margin-top: 20px;
+    }
+  }
+}
+
+@media screen and (max-width: 479px) {
+  
+}
